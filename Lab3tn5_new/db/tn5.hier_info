@@ -1,0 +1,11 @@
+|tn5
+clk => nxt_state.CLK
+J => Mux0.IN4
+K => Mux0.IN5
+pr => nxt_state~0.IN0
+cl => nxt_state~0.IN1
+cl => nxt_state.ACLR
+Q <= nxt_state.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= nxt_state.DB_MAX_OUTPUT_PORT_TYPE
+
+

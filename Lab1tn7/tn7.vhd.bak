@@ -1,0 +1,39 @@
+---- and 2 ngo vao
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+ENTITY and_2gate IS
+PORT(
+a : IN STD_LOGIC;
+b : IN STD_LOGIC;
+z : OUT STD_LOGIC);
+END and_2gate;
+ARCHITECTURE model OF and_2gate IS
+BEGIN
+z <= a AND b;
+END model;
+
+---- or 2 ngo vao
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+ENTITY or_2gate IS
+PORT(
+a : IN STD_LOGIC;
+b : IN STD_LOGIC;
+z : OUT STD_LOGIC);
+END or_2gate;
+ARCHITECTURE model OF or_2gate IS
+BEGIN
+z <= a OR b;
+END model;
+---- cong not
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+ENTITY not_gate IS
+PORT(
+a : IN STD_LOGIC;
+z : OUT STD_LOGIC);
+END not_gate;
+ARCHITECTURE model OF not_gate IS
+BEGIN
+z <= NOT a;
+END model;

@@ -1,0 +1,30 @@
+LIBRARY IEEE;
+USE IEEE. STD_LOGIC_1164.ALL;
+USE IEEE. STD_LOGIC_ARITH.ALL;
+USE IEEE. STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY tn9 IS
+
+PORT(
+	a: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+	b: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+	c0: IN STD_LOGIC;
+	s: OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+	c4: out STD_LOGIC
+	);
+END tn9;
+
+ARCHITECTURE behavior OF tn9 IS
+
+	SIGNAL a_temp: STD_LOGIC_VECTOR (4 DOWNTO 0);
+	SIGNAL b_temp: STD_LOGIC_VECTOR (4 DOWNTO 0);
+	SIGNAL sum_temp: STD_LOGIC_VECTOR (4 DOWNTO 0);
+BEGIN
+	a_temp <= '0'&a;
+	b_temp <= '0'&b;
+	sum_temp <= a_temp + b_temp+c0;
+	
+	s <= sum_temp(3 DOWNTO 0);
+	c4 <= sum_temp(4);
+END behavior;
+

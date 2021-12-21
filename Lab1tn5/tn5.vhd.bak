@@ -1,0 +1,12 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+ENTITY tn5 IS
+PORT(
+a : IN STD_LOGIC;
+b : IN STD_LOGIC;
+z : OUT STD_LOGIC);
+END tn5;
+ARCHITECTURE model OF tn5 IS
+BEGIN
+z <= a NAND b;
+END model;

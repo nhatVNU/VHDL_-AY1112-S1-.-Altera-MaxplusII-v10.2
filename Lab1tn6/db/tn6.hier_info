@@ -1,0 +1,9 @@
+|tn6
+X => F1.IN0
+Y => F1.IN1
+Y => U.IN0
+Z => U.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+F1 << F1.DB_MAX_OUTPUT_PORT_TYPE
+
+

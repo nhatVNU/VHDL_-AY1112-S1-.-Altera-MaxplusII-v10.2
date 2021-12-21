@@ -1,0 +1,45 @@
+|tn8
+x => IC74183:model1.c
+y => IC74183:model1.b
+z => IC74183:model1.a
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|tn8|IC74183:model1
+c => Mux0.IN8
+c => Mux1.IN8
+c => Mux2.IN8
+c => Mux3.IN8
+c => Mux4.IN8
+c => Mux5.IN8
+c => Mux6.IN8
+c => Mux7.IN8
+b => Mux0.IN9
+b => Mux1.IN9
+b => Mux2.IN9
+b => Mux3.IN9
+b => Mux4.IN9
+b => Mux5.IN9
+b => Mux6.IN9
+b => Mux7.IN9
+a => Mux0.IN10
+a => Mux1.IN10
+a => Mux2.IN10
+a => Mux3.IN10
+a => Mux4.IN10
+a => Mux5.IN10
+a => Mux6.IN10
+a => Mux7.IN10
+e => y.IN0
+e1 => y.IN1
+e2 => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

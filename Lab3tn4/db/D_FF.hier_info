@@ -1,0 +1,12 @@
+|D_FF
+D => Q~reg0.DATAIN
+CLK => Qn~reg0.CLK
+CLK => Q~reg0.CLK
+PR => Q~0.IN0
+PR => Qn~reg0.ACLR
+PR => Q~reg0.PRESET
+CL => Q~0.IN1
+Q << Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn << Qn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
